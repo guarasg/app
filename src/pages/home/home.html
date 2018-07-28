@@ -1,0 +1,340 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Diário de Bordo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Dia</ion-label>
+    <ion-datetime displayFormat="DDDD, DD de MMMM, YYYY" [(ngModel)]="myDate" monthNames="Janeiro, 
+    Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro" dayNames="Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, 
+      Sábado"></ion-datetime>
+  </ion-item>
+  <br>
+  <br>
+  <div>
+    1ª RESSIGNIFICAÇÃO DO DIA
+    <br> Descreva porque valeu a pena viver o dia de hoje
+  </div>
+  <ion-textarea type="text" (input)="adjustTextarea($event);"></ion-textarea>
+  <br>
+  <br>
+  <div>
+    <br> 2ª RESSIGNIFICAÇÃO DO DIA
+    <br> Se você pudesse voltar ao tempo e mudar algo que tenha acontecido hoje, o que mudaria?
+  </div>
+  <ion-textarea type="text" (input)="adjustTextarea($event);"></ion-textarea>
+  <br>
+  <br> MEUS ALVOS PARA O PRÓXIMO DIA:
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade1" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade2" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade3" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade4" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade5" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade6" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade7" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade8" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade9" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade10" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade11" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade12" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    <div id="divTriade">
+      <ion-item id="triadeTempo">
+        <ion-select [(ngModel)]="prioridade13" multiple="false">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div>
+      <ion-textarea id="meusAlvos" type="text" (input)="adjustTextarea($event);">
+      </ion-textarea>
+    </div>
+    <div id="divTriade2">
+      <ion-item>
+        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+      </ion-item>
+    </div>
+  </div>
+      <div>
+          <br> MEDITAÇÃO
+          <br> Esse é o momento de exercitar sua inteligência espiritual. Agradeça, peça perdão e libere perdão. Peça ajuda e interceda
+          por outros. O seu jeito é o jeito certo.
+      </div>
+      <ion-textarea type="text" (input)="adjustTextarea($event);"></ion-textarea>
+    <br>
+    <br>
+    <div>
+        <br> B.F.O (Brilhantes Flashes do Óbvio)
+        <br> Existem tantas coisas importantes e óbvias que merecem nossa observação, que às vezes 
+        não damos a devida atenção. Escreva aqui quando elas aparecerem.
+    </div>
+    <ion-textarea type="text" (input)="adjustTextarea($event);"></ion-textarea>
+  <br>
+  <br>
+
